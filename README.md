@@ -1,7 +1,3 @@
-# DB
-[Mongo DB Atlas](https://cloud.mongodb.com/v2/5f9f95f76c69081767cf2056#/metrics/replicaSet/67d115a02a1dc91eb3ce012a/explorer/test/todos/find)
-
-
 # Svelte + Vite
 
 This template should help get you started developing with Svelte in Vite.
