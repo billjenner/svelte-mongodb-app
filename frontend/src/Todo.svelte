@@ -1,10 +1,12 @@
 <script>
   import axios from "axios";
   import { onMount } from "svelte";
-  import Card from '@smui/card';
-  import CardContent from '@smui/card-content';
-  import CardActions from '@smui/card-actions';
-  import Button from '@smui/button';
+  import Card,  { Content,
+                  PrimaryAction,
+                  Actions,
+                  ActionButtons,
+                  ActionIcons }  from '@smui/card';
+  import Button, { Label } from '@smui/button';
 
   let todos = [];
   let newTodo = "";

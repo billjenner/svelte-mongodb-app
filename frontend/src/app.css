@@ -1,4 +1,4 @@
-@import '@smui/button';
+@import '@smui/button/styles.css';
 @import '@smui/textfield/styles.css';
 @import '@smui/card/styles.css';
 @import '@smui/card-content/styles.css';

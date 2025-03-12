@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "@smui/textfield": "^8.0.0-beta.3",
-    "axios": "^1.8.2"
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.8.2",
+    "postcss": "^8.5.3"
   }
 }
