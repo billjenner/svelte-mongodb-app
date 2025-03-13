@@ -37,9 +37,20 @@
   }
 </script>
 
-<style>
 
+<style>
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  p {
+    color: blue;
+  }
 </style>
+
 
 <h1>Todo List</h1>
 
@@ -47,16 +58,17 @@
 <button on:click={addTodo}>Add</button>
 
 {#each todos as todo}
-  <Card>
-    <Card.Primary>
-      <Card.Title>{todo.text}</Card.Title>
-      <Card.Subtitle>{todo.completed ? 'Completed' : 'Pending'}</Card.Subtitle>
-    </Card.Primary>
-    <Card.Actions>
-      <Button on:click={() => removeTodo(todo.id)}>Delete</Button>
-    </Card.Actions>
+  <Card class="card">
+    <Content class="flex items-center gap-2">
+      <row>
+      <p>{todo.text}</p>     {todo.completed ? 'Completed' : 'Pending'}
+    </row>
+    </Content>
+    <Actions>
+      <Button on:click={() => removeTodo(todo.id)}><Label>Delete</Label></Button>
+    </Actions>
   </Card>
-{/each}
+  {/each}
 
 <!-- <ul>
   {#each todos as todo}

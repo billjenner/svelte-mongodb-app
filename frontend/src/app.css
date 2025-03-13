@@ -1,9 +1,3 @@
-@import '@smui/button/styles.css';
-@import '@smui/textfield/styles.css';
-@import '@smui/card/styles.css';
-@import '@smui/card-content/styles.css';
-/* @import '@smui/card-actions/styles.css'; */
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
